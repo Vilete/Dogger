@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 
 
@@ -6,32 +7,44 @@
 body{
 
 
-
-   
-
-  font-family: 'Playfair Display', serif;
-    font-size: 16px;  
-   /*marge Exterieur*/ 
-   margin: 0;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+margin: 0;
   }
   
-
-  /*Enête de la page*/
-header {
-    
-    text-align: center;
-    
+#menu{
     display: flex; 
-  justify-content: space-between;
-
-  /*marge intérieur*/padding: 15px;
-  /*Applique une bordure*/
-
-   
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    
+    padding: 20px 0 20px 0;
+    /* OU
+    padding-top: 20px;
+    padding-bottom: 20px;
+    */
+}
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
 }
 
+  .logo span{
+   color: orange;
+  }
+
+#menu nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+}
+
+
+
 /*Coleur de fond au dessus*/
-main, header {
+header {
     background-color: rgba(128, 128, 128, 0.103);
 
 }
@@ -47,12 +60,14 @@ header nav ul{
 
 /*Applique un style sur les liens se trouvant dans la liste de la navigation du header*/
     
+p{
+    color: grey;
+}
 
-
-header nav ul li a {
+#menu nav ul li a {
 
     text-decoration:none; 
-    color: rgba(105, 105, 105, 0.616);
+    color: #999999;
     
 
 }
@@ -63,6 +78,21 @@ header nav ul li a:hover{
     }
 
 
+    main section a{
+        border: none; /* Enlève la bordure */
+        background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 12px;
+        font-size: 1.2rem;
+        margin: auto; /* Centre le bouton en appliquant des marges extérieurs automatique */
+       
+    
+    }
+
+
+    /*
 main{
     text-align: center;
 }
@@ -72,15 +102,7 @@ article {
 display: inline-flex;
 }
 
-
-aside{
-    
-    text-align: center;
-  
-}
-
- 
-main article img{
+header article img{
      
 /*1.
 2. offet axe x hori
@@ -89,49 +111,39 @@ main article img{
 5. floue axe y 
 
 Dernière valeur rgba est l'alpha, permet de définir l'opacité sur la couleur choisie
-*/
+
 
  width: 250px;
 
 
 }
 
-.div-container {
-
-    display: block;
-	width: 150px;
-	
-
-    padding: 400px;
-    text-align: right;
-    display: grid;
-   
-    grid-template-columns: 1fr 1fr ; /*ou grid-template-columns: repeat(3, 1fr); */
-    gap: 20px;
-    
-
-
-    }
-
-
-    .div-container button{
-        border: none; /* Enlève la bordure */
-        background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
-        color: white;
-        font-weight: bold;
-        border-radius: 50px;
-        padding: 12px;
-        font-size: 1.2rem;
-        margin: auto; /* Centre le bouton en appliquant des marges extérieurs automatique */
-        display: block;
-    
-    }
 
  
 
 
+.div-container {
 
-.photo{
+
+
+display: block;
+width: 150px;
+padding: 500px;
+text-align: right;
+display: grid;
+grid-template-columns: 1fr 1fr ; /*ou grid-template-columns: repeat(3, 1fr); 
+gap: 120px;
+
+
+    }
+
+
+*/
+ 
+
+
+
+.Vétérinaire{
     
     box-shadow: 6px 6px  rgba(9, 124, 139, 0.527);
     width: 400px;
@@ -147,7 +159,10 @@ Dernière valeur rgba est l'alpha, permet de définir l'opacité sur la couleur 
 footer{
    
     text-align: center;
-    background-color: grey;
-   
+    background-color: rgb(66, 64, 64);
+ 
 }
 
+footer p{
+    color: rgb(255, 255, 255); 
+}
