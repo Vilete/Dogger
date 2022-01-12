@@ -17,7 +17,7 @@ margin: 0;
     justify-content: space-between;
     width: 70%;
     margin: auto;
-    
+
     padding: 20px 0 20px 0;
     /* OU
     padding-top: 20px;
@@ -28,6 +28,7 @@ margin: 0;
     font-size: 2rem;
     text-decoration: none;
     color: black;
+    
 }
 
   .logo span{
@@ -41,44 +42,75 @@ margin: 0;
     gap: 35px;
 }
 
+header section {
+    display: flex; 
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+
+    padding: 20px 0 20px 0;
+}
+
+header section h1 {
+    font-size: 2.5rem;
+}
+
+.Titre{
+    padding: 160px;
+    
+  
+}
 
 
-/*Coleur de fond au dessus*/
+header section img{
+    width: 300px;
+}
+
+/*Couleur de fond au dessus*/
 header {
     background-color: rgba(128, 128, 128, 0.103);
 
 }
-/*Permet de trouver une LI dans une NAV dans un header*/
-header nav ul{
-    display: flex; 
-    flex-direction: row;
-    list-style: none;/* Enlève les "points sur le LI"*/
-    gap: 20px;/*Séparation entre les éléments"*/
-    
 
-}
-
-/*Applique un style sur les liens se trouvant dans la liste de la navigation du header*/
-    
-p{
-    color: grey;
-}
-
+/*Enlever . et soulignement */
 #menu nav ul li a {
-
     text-decoration:none; 
     color: #999999;
-    
-
+  
 }
-
-header nav ul li a:hover{
+ 
+/*changer couleur menu avec hover */
+#menu nav ul li a:hover{
     color:#000;
 
     }
 
 
-    main section a{
+    main {
+        width: 50%;
+        margin: auto;
+    
+        padding: 20px 0 20px 0;
+        
+    }
+
+
+    
+    .Veterinary a{
+
+        border: none; /* Enlève la bordure */
+        background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 12px;
+        font-size: 1.2rem;
+        margin: auto; 
+     
+        /* Centre le bouton en appliquant des marges extérieurs automatique */
+    }
+
+    .Dog a{
         border: none; /* Enlève la bordure */
         background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
         color: white;
@@ -87,63 +119,48 @@ header nav ul li a:hover{
         padding: 12px;
         font-size: 1.2rem;
         margin: auto; /* Centre le bouton en appliquant des marges extérieurs automatique */
-       
+    }
+
+
+.Entête {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+
+    padding: 20px 0 20px 0;
+}
+
+
+.Veterinary, .Dog {
+
+    padding: 30px;
+}
+
+
+.Veterinary {
+
+
+display: block;
+text-align: right;
+display: grid;
+grid-template-columns: 1fr 1fr ;/* ou grid-template-columns: repeat(3, 1fr); */
+gap: 120px ;
+
+}
+
+.Dog {
+    text-align: left;
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;/* ou grid-template-columns: repeat(3, 1fr); */
+    gap: 120px;
     
     }
 
 
-    /*
-main{
-    text-align: center;
-}
-   
-article {
-
-display: inline-flex;
-}
-
-header article img{
-     
-/*1.
-2. offet axe x hori
-3. offet axe y verti
-4. flou axe x
-5. floue axe y 
-
-Dernière valeur rgba est l'alpha, permet de définir l'opacité sur la couleur choisie
-
-
- width: 250px;
-
-
-}
-
 
  
-
-
-.div-container {
-
-
-
-display: block;
-width: 150px;
-padding: 500px;
-text-align: right;
-display: grid;
-grid-template-columns: 1fr 1fr ; /*ou grid-template-columns: repeat(3, 1fr); 
-gap: 120px;
-
-
-    }
-
-
-*/
- 
-
-
-
-.Vétérinaire{
+.photo{
     
     box-shadow: 6px 6px  rgba(9, 124, 139, 0.527);
     width: 400px;
@@ -157,12 +174,13 @@ gap: 120px;
 
 /*Le bas de page*/
 footer{
-   
+
+margin: 0;
+    height: 50px;
     text-align: center;
     background-color: rgb(66, 64, 64);
+    color: rgb(255, 255, 255); 
  
 }
 
-footer p{
-    color: rgb(255, 255, 255); 
-}
+
