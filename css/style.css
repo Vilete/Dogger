@@ -1,0 +1,153 @@
+
+
+
+
+
+body{
+
+
+
+   
+
+  font-family: 'Playfair Display', serif;
+    font-size: 16px;  
+   /*marge Exterieur*/ 
+   margin: 0;
+  }
+  
+
+  /*Enête de la page*/
+header {
+    
+    text-align: center;
+    
+    display: flex; 
+  justify-content: space-between;
+
+  /*marge intérieur*/padding: 15px;
+  /*Applique une bordure*/
+
+   
+}
+
+/*Coleur de fond au dessus*/
+main, header {
+    background-color: rgba(128, 128, 128, 0.103);
+
+}
+/*Permet de trouver une LI dans une NAV dans un header*/
+header nav ul{
+    display: flex; 
+    flex-direction: row;
+    list-style: none;/* Enlève les "points sur le LI"*/
+    gap: 20px;/*Séparation entre les éléments"*/
+    
+
+}
+
+/*Applique un style sur les liens se trouvant dans la liste de la navigation du header*/
+    
+
+
+header nav ul li a {
+
+    text-decoration:none; 
+    color: rgba(105, 105, 105, 0.616);
+    
+
+}
+
+header nav ul li a:hover{
+    color:#000;
+
+    }
+
+
+main{
+    text-align: center;
+}
+   
+article {
+
+display: inline-flex;
+}
+
+
+aside{
+    
+    text-align: center;
+  
+}
+
+ 
+main article img{
+     
+/*1.
+2. offet axe x hori
+3. offet axe y verti
+4. flou axe x
+5. floue axe y 
+
+Dernière valeur rgba est l'alpha, permet de définir l'opacité sur la couleur choisie
+*/
+
+ width: 250px;
+
+
+}
+
+.div-container {
+
+    display: block;
+	width: 150px;
+	
+
+    padding: 400px;
+    text-align: right;
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr ; /*ou grid-template-columns: repeat(3, 1fr); */
+    gap: 20px;
+    
+
+
+    }
+
+
+    .div-container button{
+        border: none; /* Enlève la bordure */
+        background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+        padding: 12px;
+        font-size: 1.2rem;
+        margin: auto; /* Centre le bouton en appliquant des marges extérieurs automatique */
+        display: block;
+    
+    }
+
+ 
+
+
+
+.photo{
+    
+    box-shadow: 6px 6px  rgba(9, 124, 139, 0.527);
+    width: 400px;
+}
+
+
+
+
+
+
+
+/*Le bas de page*/
+footer{
+   
+    text-align: center;
+    background-color: grey;
+   
+}
+
