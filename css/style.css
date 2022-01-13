@@ -49,12 +49,7 @@ header section {
     width: 60%;
     margin: auto;
     align-items: center;/*centrage vertical, seulement avec flexbox*/
-  /*  display: flex; 
-    justify-content: space-between;
-    width: 55%;
-    margin: auto;
-
-    padding: 20px 0 20px 0;*/
+ 
 }
 
 header section h1 {
@@ -65,10 +60,12 @@ header section h1 {
 .Titre{
 
     width: 35%;
-   /* padding: 160px;*/
+
     
   
 }
+
+/*ecriture en dessous du titre*/
 header section p {
     font-size: 1.3;
     margin: 0;font-weight: lighter;
@@ -117,8 +114,8 @@ header {
         padding: 12px;
         font-size: 1.2rem;
         margin: auto; 
-     
-        /* Centre le bouton en appliquant des marges extérieurs automatique */
+     /* Centre le bouton en appliquant des marges extérieurs automatique */
+        
     }
 
     .Dog a{ 
