@@ -109,6 +109,7 @@ header {
     
     .Veterinary a{
 
+        
         text-decoration:none; 
         border: none; /* Enlève la bordure */
         background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
@@ -123,6 +124,7 @@ header {
     }
 
    main a:hover{
+    
        background-color: rgba(255, 0, 0, 0.493);
     }
 
@@ -176,8 +178,12 @@ gap: 120px ;
     }
 
 
-
+.Veterinary p,.Dog p {
+    height: 110px;
+}
  
+
+
 .photo{
     
     box-shadow: 6px 6px  rgba(9, 124, 139, 0.527);
