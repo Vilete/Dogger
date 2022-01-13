@@ -98,6 +98,7 @@ header {
     
     .Veterinary a{
 
+        text-decoration:none; 
         border: none; /* Enlève la bordure */
         background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
         color: white;
@@ -110,7 +111,8 @@ header {
         /* Centre le bouton en appliquant des marges extérieurs automatique */
     }
 
-    .Dog a{
+    .Dog a{ 
+        text-decoration:none; 
         border: none; /* Enlève la bordure */
         background-color: rgba(9, 124, 139, 0.527); /* hexadecimal */
         color: white;
