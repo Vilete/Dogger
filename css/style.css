@@ -100,7 +100,6 @@ header {
     main {
         width: 50%;
         margin: auto;
-    
         padding: 20px 0 20px 0;
         
     }
@@ -142,10 +141,10 @@ header {
 
 
 .Entête {
-    height:180px;
+  
     text-align: center;
     width: 50%;
-    margin: auto;
+    margin: 60px auto;
 
     padding: 20px 0 20px 0;
 }
@@ -160,17 +159,14 @@ header {
 .Veterinary {
 
 
-display: block;
+display: flex;
 text-align: right;
-display: grid;
-grid-template-columns: 1fr 1fr ;/* ou grid-template-columns: repeat(3, 1fr); */
 gap: 120px ;
 
 }
 
 .Dog {
     text-align: left;
-    display: block;
     display: grid;
     grid-template-columns: 1fr 1fr ;/* ou grid-template-columns: repeat(3, 1fr); */
     gap: 120px;
@@ -194,16 +190,15 @@ gap: 120px ;
 
 
 
-
 /*Le bas de page*/
 footer{
 
-margin: 0;
+
     height: 50px;
     text-align: center;
     background-color: rgb(66, 64, 64);
     color: rgb(255, 255, 255); 
- 
+    padding: 25px 0;
 }
 
 
